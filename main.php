@@ -1,3 +1,9 @@
+<?php
+	use google\appengine\api\users\UserService;
+	
+	$user = UserService::getCurrentUser();
+?>
+
 <html>
 <head>
   <title>Meta Theme Color</title>
@@ -14,22 +20,14 @@
 <h3>Okay, so how do I play?</h3>
 <p>First, you need to be logged in with a Google account. The italicised text below should tell you if you are or not.</p>
 <?php
-	use google\appengine\api\users\UserService;
-	
-	$user = UserService::getCurrentUser();
-
 	if (isset($user)) {
-		echo('<p><i>You are currently logged in as '.$user->getNickname().'</i></p>');
-		echo('<form action="'.UserService::createLogoutUrl.'">
-				<input type="submit" value="Logout" />
-			</form>'
-			);
+		$logout_url = UserService::createLogoutUrl('/');
+		echo('<p><i>You are currently logged in as '.$user->getEmail().'</i></p>');
+		echo('<a href="'.$logout_url.'">Logout</a>');
 	} else {
+		$login_url = UserService::createLoginUrl('/');
 		echo('<p><i>You are currently not logged in to any account</i></p>');
-		echo('<form action="'.UserService::createLoginUrl.'">
-				<input type="submit" value="Login" />
-			</form>'
-			);
+		echo('<a href="'.$login_url.'">Login</a>');
 	}
 ?>
 </body>

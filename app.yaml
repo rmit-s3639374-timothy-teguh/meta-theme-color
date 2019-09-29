@@ -2,6 +2,11 @@ runtime: php55
 api_version: 1
 
 handlers:
+- url: /css
+  static_dir: css
 
-- url: /.*
+- url: /
   script: main.php
+
+- url: /colors
+  script: colors.php

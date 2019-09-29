@@ -11,10 +11,12 @@
   <link rel='stylesheet' type='text/css' href='/css/main.css'>
 </head>
 
-
 <body>
 <h1>Welcome to Meta Theme Color!</h1>
 <p>Where you play a strange game in which you take a few seconds to pick a color for the day, and wait for the results.</p>
+
+<h3>Why the name?</h3>
+<p>The name is a reference to a meta tag. Since this game is rather "meta" and it has something to do with colors, I chose to use that name.</p>
 
 <h3>What even is this website?</h3>
 <p>Truth to be told, I do not know what its real purpose is. Basically, it is just a simple game.</p>
@@ -41,6 +43,6 @@
 			);
 	}
 ?>
-<p>You probably want to read further before clicking that button, however.<p>
+<p>You probably want to continue reading before clicking that button, however.<p>
 </body>
 <html>

@@ -20,7 +20,7 @@
 <p><a href="stats">View Statistics</a></p>
 <p><a href="main">Back to Main Page</a></p>
 
-<h3>Choose a Color</h3>
+<h2>Choose a Color</h2>
 <p>You cannot change your choice once you pick. Choose wisely.</p>
 <p>To earn points, you need to choose the least chosen color.</p>
 

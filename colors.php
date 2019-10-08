@@ -25,26 +25,26 @@
 
 <div id="red" class="red">
     <span class="text">
-    <a href="red">Red</a>
+    <p><a href="red">Red</a></p>
 </div>
 <div class="green">
     <span class="text">
-    <a href="green">Green</a>
+    <p><a href="green">Green</a></p>
 </div>
 <div class="blue">
     <span class="text">
-    <a href="blue">Blue</a>
+    <p><a href="blue">Blue</a></p>
 </div>
 <div class="cyan">
     <span class="text">
-    <a href="cyan">Cyan</a>
+    <p><a href="cyan">Cyan</a></p>
 </div>
 <div class="magenta">
     <span class="text">
-    <a href="magenta">Magenta</a>
+    <p><a href="magenta">Magenta</a></p>
 </div>
 <div class="yellow">
     <span class="text">
-    <a href="yellow">Yellow</a>
+    <p><a href="yellow">Yellow</a></p>
 </div>
 </html>

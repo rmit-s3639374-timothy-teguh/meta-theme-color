@@ -34,15 +34,28 @@
 		echo('<p><a href="'.$login_url.'">Login</a></p>');
 	}
 ?>
-<p>If you are logged in, there should be a button below.</p>
+<p>If you are logged in, there should be buttons below.</p>
 <?php
 	if (isset($user)) {
 		echo('<form action="/colors">
 			<input type="submit" value="Choose a Color Now!" />
 			</form>'
 			);
+		echo('<form action="/stats">
+			<input type="submit" value="Check Your Stats" />
+			</form>'
+			);
 	}
 ?>
-<p>You probably want to continue reading before clicking that button, however.<p>
+<p>You probably want to continue reading, however.<p>
+
+<h3>Rules of the Game</h3>
+<ul>
+  <li>You can only choose one color per day.</li>
+  <li>The day resets at 12:00 AM (Midnight) Australian Eastern Standard Time.</li>
+  <li>If that color is the least picked out of all the other colors, you earn a point.</li>
+  <li>The results will be released when the day resets<li>
+</ul> 
+<p>That's it. Simple, right?<p>
 </body>
 <html>

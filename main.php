@@ -54,14 +54,18 @@
   <li>You can only choose one color per day.</li>
   <li>The day resets at 12:00 AM (Midnight) Australian Eastern Standard Time.</li>
   <li>If that color is the least picked out of all the other colors, you earn a point.</li>
-  <li>The results will be released when the day resets<li>
+  <li>The results will be released when the day resets</li>
 </ul> 
+
 <p>That's it. Simple, right?<p>
 
-<h3>Purpose of this Website<h3>
-<p>It's just for fun. I wanted to make something similar to Reddit's "The Button", because I thought it was an interesting idea. Perhaps this website may be useful for sociology or psychology.<p>
+<h3>Purpose of this Website</h3>
+<p>It's just for fun. I wanted to make something similar to Reddit's "The Button", because I thought it was an interesting idea. Perhaps this website may be useful for sociology or psychology.</p>
 
-<h3>Why does this website look terrible? It's like it was made in the 80s!<h3>
-<p>I wanted a design that was easy on the eyes. Not too flashy in a way that distracts the essence of the game. Truth to be told, I like the simplicity of the default styling.<p>
+<h3>Why does this website look terrible? It's like it was made in the 80s!</h3>
+<p>I wanted a design that was easy on the eyes. Not too flashy in a way that distracts the essence of the game. Truth to be told, I like the simplicity of the default styling.</p>
+<p>Also, I'm a terrible designer. Rather than risk making my website less accessible, I choose to use the default styling.</p>
+<p>Besides, look at the first website at<a href="http://info.cern.ch/">http://info.cern.ch/</a></p>
+<p>It's beautiful, isn't it?</p>
 </body>
 <html>

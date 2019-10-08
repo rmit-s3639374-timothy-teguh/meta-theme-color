@@ -42,7 +42,7 @@
 			</form>'
 			);
 		echo('<form action="/stats">
-			<input type="submit" value="Check Your Stats" />
+			<input type="submit" value="Look at Stats" />
 			</form>'
 			);
 	}

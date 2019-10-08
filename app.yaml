@@ -8,5 +8,8 @@ handlers:
 - url: /
   script: main.php
 
+- url: /main
+  script: main.php
+
 - url: /colors
   script: colors.php

@@ -1,0 +1,11 @@
+a:link {
+	color: #808080;
+}
+
+a:visited {
+	color: #404040;
+}
+
+
+div#red a:link { color: #FF0000; }
+div#red a:visited { color: #FF0000; }

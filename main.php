@@ -57,5 +57,11 @@
   <li>The results will be released when the day resets<li>
 </ul> 
 <p>That's it. Simple, right?<p>
+
+<h3>Purpose of this Website<h3>
+<p>It's just for fun. I wanted to make something similar to Reddit's "The Button", because I thought it was an interesting idea. Perhaps this website may be useful for sociology or psychology.<p>
+
+<h3>Why does this website look terrible? It's like it was made in the 80s!<h3>
+<p> I wanted a design that was easy on the eyes. Not too flashy in a way that distracts the essence of the game. Truth to be told, I like the simplicity of the default styling.<p>
 </body>
 <html>

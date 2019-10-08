@@ -22,6 +22,7 @@
 
 <h3>Choose a Color</h3>
 <p>You cannot change your choice once you pick. Choose wisely.</p>
+<p>To earn points, you need to choose the least chosen color.</p>
 
 <div id="red" class="red">
     <span class="text">

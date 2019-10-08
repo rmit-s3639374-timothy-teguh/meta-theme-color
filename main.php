@@ -65,7 +65,7 @@
 <h3>Why does this website look terrible? It's like it was made in the 80s!</h3>
 <p>I wanted a design that was easy on the eyes. Not too flashy in a way that distracts the essence of the game. Truth to be told, I like the simplicity of the default styling.</p>
 <p>Also, I'm a terrible designer. Rather than risk making my website less accessible, I choose to use the default styling.</p>
-<p>Besides, look at the first website at<a href="http://info.cern.ch/">http://info.cern.ch/</a></p>
+<p>Take a look at one of the first website ever made at <a href="http://info.cern.ch/">http://info.cern.ch/</a></p>
 <p>It's beautiful, isn't it?</p>
 </body>
 <html>

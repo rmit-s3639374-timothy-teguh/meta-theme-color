@@ -21,7 +21,7 @@
 <p><a href="main">Back to Main Page</a></p>
 
 <h2>Choose a Color</h2>
-<p>You cannot change your choice once you pick. Choose wisely.</p>
+<p>You cannot change your choice once you choose. Choose wisely.</p>
 <p>To earn points, you need to choose the least chosen color.</p>
 
 <div id="red" class="red">

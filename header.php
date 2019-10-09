@@ -14,6 +14,7 @@
         echo('<p><a href="'.$logout_url.'">Logout</a></p>');
 	} else {
         header('Location: main');
+        die();
     }
 ?>
 <p><a href="colors">Choose a Color</a></p>

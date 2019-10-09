@@ -17,3 +17,6 @@ handlers:
 
 - url: /colors
   script: colors.php
+
+- url: /stats
+  script: stats.php

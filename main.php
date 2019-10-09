@@ -53,8 +53,9 @@
 <ul>
   <li>You can only choose one color per day.</li>
   <li>The day resets at 12:00 AM (Midnight) Australian Eastern Standard Time.</li>
-  <li>If that color is the least picked out of all the other colors, you earn a point.</li>
-  <li>The results will be released when the day resets</li>
+  <li>If that color is the least chosen out of all the other colors, you earn a point.</li>
+  <li>Colors nobody chose will be ignored.</li>
+  <li>The results will be released when the day resets.</li>
 </ul> 
 
 <p>That's it. Simple, right?<p>

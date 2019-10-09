@@ -5,3 +5,46 @@ a:link {
 a:visited {
 	color: #404040;
 }
+
+
+.red a:link {
+	color: #EE0000;
+}
+.red a:visited {
+	color: #EE0000;
+}
+
+.green a:link {
+	color: #00EE00;
+}
+.green a:visited {
+	color: #00EE00;
+}
+
+.blue a:link {
+	color: #0000EE;
+}
+.blue a:visited {
+	color: #0000EE;
+}
+
+.cyan a:link {
+	color: #00EEEE;
+}
+.cyan a:visited {
+	color: #00EEEE;
+}
+
+.magenta a:link {
+	color: #EE00EE;
+}
+.magenta a:visited {
+	color: #EE00EE;
+}
+
+.yellow a:link {
+	color: #EEEE00;
+}
+.yellow a:visited {
+	color: #EEEE00;
+}

@@ -2,7 +2,7 @@
 <head>
   <title>Meta Theme Color</title>
   <meta charset='UTF-8'>
-  <link rel='stylesheet' type='text/css' href='/css/colors.css'>
+  <link rel='stylesheet' type='text/css' href='/css/default.css'>
 </head>
 <?php
 	use google\appengine\api\users\UserService;
@@ -24,7 +24,7 @@
 <p>You cannot change your choice once you choose. Choose wisely.</p>
 <p>To earn points, you need to choose the least chosen color.</p>
 
-<div id="red" class="red">
+<div class="red">
     <span class="text">
     <p><a href="red">Red</a></p>
 </div>

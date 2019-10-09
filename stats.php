@@ -6,15 +6,16 @@
 <?php
     $points = 0;
     // Put function for getting points here
-    echo('<p>Total Points: '.$points.'</p>');
+    echo('<p>Points: '.$points.'</p>');
     $color = null;
     // Put function for getting chosen color here
+    echo('Color: ');
     switch($color){
         case 'r':
             echo(
                 '<div class="red">
                     <span class="text">
-                    <p><a href="red">Red</a></p>
+                    <a href="red">Red</a>
                 </div>'
             );
             break;
@@ -22,7 +23,7 @@
             echo(
                 '<div class="green">
                     <span class="text">
-                    <p><a href="green">Green</a></p>
+                    <a href="green">Green</a>
                 </div>'
             );
             break;
@@ -30,7 +31,7 @@
             echo(
                 '<div class="blue">
                     <span class="text">
-                    <p><a href="blue">Blue</a></p>
+                    <a href="blue">Blue</a>
                 </div>'
             );
             break;
@@ -38,7 +39,7 @@
             echo(
                 '<div class="cyan">
                     <span class="text">
-                    <p><a href="cyan">Cyan</a></p>
+                    <a href="cyan">Cyan</a>
                 </div>'
             );
             break;
@@ -46,7 +47,7 @@
             echo(
                 '<div class="magenta">
                     <span class="text">
-                    <p><a href="magenta">Magenta</a></p>
+                    <a href="magenta">Magenta</a>
                 </div>'
             );
             break;
@@ -54,11 +55,13 @@
             echo(
                 '<div class="yellow">
                     <span class="text">
-                    <p><a href="yellow">Yellow</a></p>
+                    <a href="yellow">Yellow</a>
                 </div>'
             );
             break;
         default:
-            echo('<p>Today\'s Color: None</p>');
+            echo('None');
     }
 ?>
+<h3>Yesterday's Results</h3>
+</html>

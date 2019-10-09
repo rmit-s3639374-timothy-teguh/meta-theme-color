@@ -20,3 +20,24 @@ handlers:
 
 - url: /stats
   script: stats.php
+
+- url: /wait
+  script: wait.php
+
+- url: /red
+  script: /colors/red.php
+
+- url: /green
+  script: /colors/green.php
+
+- url: /blue
+  script: /colors/blue.php
+
+- url: /cyan
+  script: /colors/cyan.php
+
+- url: /magenta
+  script: magenta.php
+
+- url: /yellow
+  script: yellow.php

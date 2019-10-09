@@ -6,7 +6,7 @@
 <?php
     $points = 0;
     // Put function for getting points here
-    echo('<p>Points: '.$points.'</p>');
+    echo('<p>Total Points: '.$points.'</p>');
     $color = null;
     // Put function for getting chosen color here
     switch($color){

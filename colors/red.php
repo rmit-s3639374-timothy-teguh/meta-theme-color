@@ -1,10 +1,9 @@
 <?php
     include 'functions.php';
-    
+
     try{
         $db = null;
         $db = new pdo('mysql:unix_socket=/cloudsql/meta-theme-color:australia-southeast1:mtc-database;dbname=mtc', 'root', '');
-        //$db = new mysqli(null, 'root', 'namnamnam', 'mtc', null, '/cloudsql/meta-theme-color:australia-southeast1:mtc-database');
 
         $select = $db->prepare('SELECT today FROM mtc.entries WHERE color = "r"');
         $select->execute();

@@ -1,7 +1,9 @@
-<html>
 <?php
+    include 'user_display.php'; 
     include 'header.php'; 
+    include 'menu.php'
 ?>
+<html>
 <h2>Choose a Color</h2>
 <p>You cannot change your choice once you choose. Choose wisely.</p>
 <p>To earn points, you need to choose the least chosen color.</p>

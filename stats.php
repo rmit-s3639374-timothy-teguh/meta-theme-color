@@ -1,7 +1,9 @@
-<html>
 <?php
+    include 'user_display.php'; 
     include 'header.php'; 
+    include 'menu.php'
 ?>
+<html>
 <h2>Statistics</h2>
 <?php
     function colors($color){

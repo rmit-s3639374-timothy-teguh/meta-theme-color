@@ -37,7 +37,7 @@ handlers:
   script: /colors/cyan.php
 
 - url: /magenta
-  script: magenta.php
+  script: /colors/magenta.php
 
 - url: /yellow
-  script: yellow.php
+  script: /colors/yellow.php

@@ -10,6 +10,9 @@ a:visited {
 .red {
 	color: #EE0000;
 }
+.red_s {
+	color: #EE0000;
+}
 
 .red a:link {
 	color: #EE0000;
@@ -19,6 +22,9 @@ a:visited {
 }
 
 .green {
+	color: #00EE00;
+}
+.green_s {
 	color: #00EE00;
 }
 .green a:link {
@@ -31,6 +37,9 @@ a:visited {
 .blue {
 	color: #0000EE;
 }
+.blue_s {
+	color: #0000EE;
+}
 .blue a:link {
 	color: #0000EE;
 }
@@ -39,6 +48,9 @@ a:visited {
 }
 
 .cyan {
+	color: #00EEEE;
+}
+.cyan_s {
 	color: #00EEEE;
 }
 .cyan a:link {
@@ -51,6 +63,9 @@ a:visited {
 .magenta {
 	color: #EE00EE;
 }
+.magenta_s {
+	color: #EE00EE;
+}
 .magenta a:link {
 	color: #EE00EE;
 }
@@ -59,6 +74,9 @@ a:visited {
 }
 
 .yellow {
+	color: #EEEE00;
+}
+.yellow_s {
 	color: #EEEE00;
 }
 .yellow a:link {

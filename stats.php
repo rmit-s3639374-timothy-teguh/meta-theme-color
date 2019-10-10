@@ -4,67 +4,68 @@
 ?>
 <h2>Statistics</h2>
 <?php
+    function colors($color){
+        switch($color){
+            case 'r':
+                echo(
+                    '<span class="red_s">
+                        Red
+                    </span>'
+                );
+                break;
+            case 'g':
+                echo(
+                    '<span class="green_s">
+                        Green
+                    </span>'
+                );
+                break;
+            case 'b':
+                echo(
+                    '<span class="blue_s">
+                        Blue
+                    </span>'
+                );
+                break;
+            case 'c':
+                echo(
+                    '<span class="cyan_s">
+                        Cyan
+                    </span>'
+                );
+                break;
+            case 'm':
+                echo(
+                    '<span class="magenta_s">
+                        Magenta
+                    </span>'
+                );
+                break;
+            case 'y':
+                echo(
+                    '<span class="yellow_s">
+                        Yellow
+                    </span>'
+                );
+                break;
+            default:
+                echo('None');
+        }
+    }
     $points = 0;
     // Put function for getting points here
     echo('<p>Points: '.$points.'</p>');
-    $color = null;
+    $chosen_color = null;
     // Put function for getting chosen color here
-    echo('Color: ');
-    switch($color){
-        case 'r':
-            echo(
-                '<div class="red">
-                    <span class="text">
-                    <a href="red">Red</a>
-                </div>'
-            );
-            break;
-        case 'g':
-            echo(
-                '<div class="green">
-                    <span class="text">
-                    <a href="green">Green</a>
-                </div>'
-            );
-            break;
-        case 'b':
-            echo(
-                '<div class="blue">
-                    <span class="text">
-                    <a href="blue">Blue</a>
-                </div>'
-            );
-            break;
-        case 'c':
-            echo(
-                '<div class="cyan">
-                    <span class="text">
-                    <a href="cyan">Cyan</a>
-                </div>'
-            );
-            break;
-        case 'm':
-            echo(
-                '<div class="magenta">
-                    <span class="text">
-                    <a href="magenta">Magenta</a>
-                </div>'
-            );
-            break;
-        case 'y':
-            echo(
-                '<div class="yellow">
-                    <span class="text">
-                    <a href="yellow">Yellow</a>
-                </div>'
-            );
-            break;
-        default:
-            echo('None');
-    }
+    echo('Today\'s Color: ');
+    colors($chosen_color);
+    
 ?>
 <h3>Yesterday's Results</h3>
 <?php
+    $yesterday_color = null;
+    echo('You Chose: ');
+    colors($yesterday_color);
     $r_num = 0;
     $g_num = 0;
     $b_num = 0;

@@ -5,11 +5,9 @@
 ?>
 
 <html>
-<head>
-  <title>Meta Theme Color</title>
-  <meta charset='UTF-8'>
-  <link rel='stylesheet' type='text/css' href='/css/default.css'>
-</head>
+<?php
+	include 'header.php';
+?>
 
 <body>
 <h1>Welcome to Meta Theme Color!</h1>

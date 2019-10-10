@@ -20,6 +20,9 @@
     $yesterday_color = null;
     echo('You Chose: ');
     colors($yesterday_color);
+    $winner = null;
+    echo('Yesterday\'s Winner: ');
+    colors($winner);
     $r_num = 0;
     $g_num = 0;
     $b_num = 0;

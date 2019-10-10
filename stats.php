@@ -1,5 +1,5 @@
 <?php
-    include 'user_display.php'; 
+    include 'user.php'; 
     include 'header.php'; 
     include 'menu.php'
 ?>

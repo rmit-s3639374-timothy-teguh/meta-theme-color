@@ -1,7 +1,7 @@
 <?php
     include 'user.php'; 
     include 'header.php'; 
-    include 'menu.php'
+    include 'menu.php';
 ?>
 <html>
 <h2>Waiting Room</h2>

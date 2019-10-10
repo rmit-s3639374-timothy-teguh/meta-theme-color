@@ -1,59 +1,11 @@
 <?php
     include 'user.php'; 
     include 'header.php'; 
-    include 'menu.php'
+    include 'menu.php';
 ?>
 <html>
 <h2>Statistics</h2>
 <?php
-    function colors($color){
-        switch($color){
-            case 'r':
-                echo(
-                    '<span class="red_s">
-                        Red
-                    </span>'
-                );
-                break;
-            case 'g':
-                echo(
-                    '<span class="green_s">
-                        Green
-                    </span>'
-                );
-                break;
-            case 'b':
-                echo(
-                    '<span class="blue_s">
-                        Blue
-                    </span>'
-                );
-                break;
-            case 'c':
-                echo(
-                    '<span class="cyan_s">
-                        Cyan
-                    </span>'
-                );
-                break;
-            case 'm':
-                echo(
-                    '<span class="magenta_s">
-                        Magenta
-                    </span>'
-                );
-                break;
-            case 'y':
-                echo(
-                    '<span class="yellow_s">
-                        Yellow
-                    </span>'
-                );
-                break;
-            default:
-                echo('None');
-        }
-    }
     $points = 0;
     // Put function for getting points here
     echo('<p>Points: '.$points.'</p>');

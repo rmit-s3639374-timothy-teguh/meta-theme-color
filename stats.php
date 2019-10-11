@@ -93,7 +93,7 @@
             </div>'
         );
     ?>
-    <div id="piechart" style="width: 300px; height: 300px;"></div>
+    <div id="piechart" style="width: 350px; height: 350px;"></div>
 </body>
 <script>
     google.charts.load('current', {packages: ['corechart']});

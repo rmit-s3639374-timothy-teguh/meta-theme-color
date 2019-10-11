@@ -45,12 +45,12 @@
 			);
 	}
 ?>
-<p>You probably want to continue reading, however.<p>
+<p>You probably should continue reading, however.<p>
 
 <h3>Rules of the Game</h3>
 <ul>
   <li>You can only choose one color per day.</li>
-  <li>The day resets at 12:00 AM (Midnight) Australian Eastern Standard Time.</li>
+  <li>The day resets at 0:00 (Midnight) Australian Eastern Standard Time.</li>
   <li>If that color is the most chosen out of all the other colors, you win a point.</li>
   <li>However, if there is a color with half or less than the number of people who chose the most chosen color, the least chosen color will win instead.</li>
   <li>Any ties during the scoring will result in nobody winning.</li>
@@ -71,3 +71,7 @@
 <p>It's beautiful, isn't it?</p>
 </body>
 <html>
+
+<?php
+	include 'clock.php';
+?>

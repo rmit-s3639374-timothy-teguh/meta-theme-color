@@ -1,7 +1,8 @@
 <?php
     include 'user.php'; 
-    include 'header.php'; 
+    include 'header.php';
     include 'menu.php';
+    include 'clock.php';
 ?>
 <html>
 <h2>Statistics</h2>

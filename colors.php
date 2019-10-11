@@ -12,26 +12,26 @@
 
 <div class="red">
     <span class="text">
-    <p><a href="red">Red</a></p>
+    <p><b><a href="red">Red</a></b></p>
 </div>
 <div class="green">
     <span class="text">
-    <p><a href="green">Green</a></p>
+    <p><b><a href="green">Green</a></b></p>
 </div>
 <div class="blue">
     <span class="text">
-    <p><a href="blue">Blue</a></p>
+    <p><b><a href="blue">Blue</a></b></p>
 </div>
 <div class="cyan">
     <span class="text">
-    <p><a href="cyan">Cyan</a></p>
+    <p><b><a href="cyan">Cyan</a></b></p>
 </div>
 <div class="magenta">
     <span class="text">
-    <p><a href="magenta">Magenta</a></p>
+    <p><b><a href="magenta">Magenta</a></b></p>
 </div>
 <div class="yellow">
     <span class="text">
-    <p><a href="yellow">Yellow</a></p>
+    <p><b><a href="yellow">Yellow</a></b></p>
 </div>
 </html>

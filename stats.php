@@ -12,20 +12,20 @@
     echo('<p>Points: '.$points.'</p>');
     $chosen_color = null;
     // Put function for getting chosen color here
-    echo('Today\'s Color: ');
+    echo('<p>Today\'s Color: <b>');
     colors($chosen_color);
-    
+    echo('</b></p>');
 ?>
 <h3>Yesterday's Results</h3>
 <?php
     $yesterday_color = null;
-    echo('<p>You Chose: ');
+    echo('<p>You Chose: <b>');
     colors($yesterday_color);
-    echo('</p>');
+    echo('</b></p>');
     $winner = null;
-    echo('<p>Winner: ');
+    echo('<p>Winner: <b>');
     colors($winner);
-    echo('</p>');
+    echo('</b></p>');
     $r_num = 0;
     $g_num = 0;
     $b_num = 0;
@@ -35,37 +35,37 @@
     echo(
         '<div class="red">
             <span class="text">
-            <p>Red = '.$r_num.'</p>
+            <p><b>Red = '.$r_num.'</b></p>
         </div>'
     );
     echo(
         '<div class="green">
             <span class="text">
-            <p>Green = '.$g_num.'</p>
+            <p><b>Green = '.$g_num.'</b></p>
         </div>'
     );
     echo(
         '<div class="blue">
             <span class="text">
-            <p>Blue = '.$b_num.'</p>
+            <p><b>Blue = '.$b_num.'</b></p>
         </div>'
     );
     echo(
         '<div class="cyan">
             <span class="text">
-            <p>Cyan = '.$c_num.'</p>
+            <p><b>Cyan = '.$c_num.'</b></p>
         </div>'
     );
     echo(
         '<div class="magenta">
             <span class="text">
-            <p>Magenta = '.$m_num.'</p>
+            <p><b>Magenta = '.$m_num.'</b></p>
         </div>'
     );
     echo(
         '<div class="yellow">
             <span class="text">
-            <p>Yellow = '.$y_num.'</p>
+            <p><b>Yellow = '.$y_num.'</b></p>
         </div>'
     );
 ?>

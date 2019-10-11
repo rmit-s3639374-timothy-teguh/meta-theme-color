@@ -19,11 +19,13 @@
 <h3>Yesterday's Results</h3>
 <?php
     $yesterday_color = null;
-    echo('You Chose: ');
+    echo('<p>You Chose: ');
     colors($yesterday_color);
+    echo('</p>');
     $winner = null;
-    echo('Yesterday\'s Winner: ');
+    echo('<p>Winner: ');
     colors($winner);
+    echo('</p>');
     $r_num = 0;
     $g_num = 0;
     $b_num = 0;

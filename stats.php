@@ -102,7 +102,7 @@
     function drawChart() {
         // Define the chart to be drawn.
         var data = google.visualization.arrayToDataTable([
-        ['Color', 'Times Chosen'],
+        ['Color', 'Count'],
         ['Red', <?php echo($r_num); ?>],
         ['Green', <?php echo($g_num); ?>],
         ['Blue', <?php echo($b_num); ?>],

@@ -6,6 +6,8 @@
     include 'menu.php';
     include 'clock.php';
 
+    use google\appengine\api\users\UserService;
+	$user = UserService::getCurrentUser();
     try{
         $db = null;
         $db = new pdo('mysql:unix_socket=/cloudsql/meta-theme-color:australia-southeast1:mtc-database;dbname=mtc', 'root', '');
@@ -17,6 +19,9 @@
 
         $update = $db->prepare('UPDATE mtc.entries SET today = ? WHERE color = "g"');
         $update->execute(array($today + 1));
+
+        $update = $db->prepare('UPDATE mtc.users SET today_color = "g" WHERE email = ?');
+        $update->execute(array($user->getEmail()));
 
     }catch(PDOException $ex){
         exit($ex->getMessage());

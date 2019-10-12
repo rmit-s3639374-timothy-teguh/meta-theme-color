@@ -1,4 +1,6 @@
 <?php
+    use google\appengine\api\users\UserService;
+
     function colors($color){
         // Echoes out a colored text with the name of the color
         switch($color){
@@ -68,6 +70,77 @@
     
         }catch(PDOException $ex){
             exit($ex->getMessage());
+        }
+    }
+    
+    function has_chosen($email){
+        // Checks if user has already chosen a color today
+        try{
+            $db = null;
+            $db = new pdo('mysql:unix_socket=/cloudsql/meta-theme-color:australia-southeast1:mtc-database;dbname=mtc', 'root', '');
+            // Search if user already exists in the database
+            $select = $db->prepare('SELECT today_color FROM mtc.users WHERE email = ?');
+            $select->execute(array($email));
+            $result = $select->fetchAll();
+            $chosen_color = $result[0][0];
+            $db = null;
+            if($chosen_color != null){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }catch(PDOException $ex){
+            exit($ex->getMessage());
+        }
+    }
+
+    // Run checks to redirect the user if certain conditions are not met
+    function user_checks(){
+        $user = UserService::getCurrentUser();
+        if (isset($user)) {
+            user_init($user->getEmail());
+            if(has_chosen($user->getEmail()) == true){
+                header('Location: wait');
+                exit();
+            }
+            $logout_url = UserService::createLogoutUrl('/');
+            echo('<p><i>You are currently logged in as '.$user->getEmail().'</i></p>');
+            echo('<p><a href="'.$logout_url.'">Logout</a></p>');
+        } else {
+            header('Location: main');
+            exit();
+        }
+    }
+    function user_checks_basic(){
+        // Variant, while ignoring whether or not the user has chosen a color
+        $user = UserService::getCurrentUser();
+        if (isset($user)) {
+            user_init($user->getEmail());
+            $logout_url = UserService::createLogoutUrl('/');
+            echo('<p><i>You are currently logged in as '.$user->getEmail().'</i></p>');
+            echo('<p><a href="'.$logout_url.'">Logout</a></p>');
+        } else {
+            header('Location: main');
+            exit();
+        }
+    }
+
+    function user_checks_chose(){
+        // Variant that checks that if user has not chosen yet
+        $user = UserService::getCurrentUser();
+        if (isset($user)) {
+            user_init($user->getEmail());
+            if(has_chosen($user->getEmail()) == false){
+                header('Location: colors');
+                exit();
+            }
+            $logout_url = UserService::createLogoutUrl('/');
+            echo('<p><i>You are currently logged in as '.$user->getEmail().'</i></p>');
+            echo('<p><a href="'.$logout_url.'">Logout</a></p>');
+        } else {
+            header('Location: main');
+            exit();
         }
     }
 ?>

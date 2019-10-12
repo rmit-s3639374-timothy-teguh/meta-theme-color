@@ -1,5 +1,7 @@
 <?php
-    include 'user.php'; 
+    include 'functions.php';
+    user_checks();
+    
     include 'header.php'; 
     include 'menu.php';
     include 'clock.php';

@@ -41,3 +41,7 @@ handlers:
 
 - url: /yellow
   script: /colors/yellow.php
+
+- url: /reset
+  script: reset.php
+  login: admin

@@ -1,0 +1,5 @@
+cron:
+- description: "daily reset"
+  url: /reset
+  timezone: Australia/Brisbane
+  schedule: every day 00:00

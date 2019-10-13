@@ -52,9 +52,10 @@
   <li>You can only choose one color per day.</li>
   <li>The day resets at 01:00 (An hour past midnight) Australian Eastern Standard Time.</li>
   <li>You cannot choose between 00:00 to 01:59 Australian Eastern Standard Time, so make sure you choose before that time!</li>
-  <li>If that color is the most chosen out of all the other colors, you win a point.</li>
+  <li>The day will not reset if none of the colors are chosen.</li>
+  <li>If the color you chose is the most chosen out of all the other colors, you win a point.</li>
   <li>However, if there is a color with half or less than the number of people who chose the most chosen color, the least chosen color will win instead.</li>
-  <li>Any ties during between colors will result in those colors being disqualified.</li>
+  <li>If there are two or more winning colors (ie. a tie), it will result in nobody winning.</li>
   <li>However, if all colors are tied, then everyone who participated will earn a point.</li>
   <li>Colors nobody chose will be ignored in the scoring.</li>
   <li>The results will be released when the day resets.</li>

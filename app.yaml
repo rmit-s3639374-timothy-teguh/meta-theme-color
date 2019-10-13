@@ -24,6 +24,9 @@ handlers:
 - url: /wait
   script: wait.php
 
+- url: /timeout
+  script: timeout.php
+
 - url: /red
   script: /colors/red.php
 

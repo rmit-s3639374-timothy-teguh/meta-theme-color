@@ -143,4 +143,26 @@
             exit();
         }
     }
+
+    function time_check(){
+        // Checks time and redirects user if overtime
+        date_default_timezone_set('Australia/Brisbane');
+        $hour = date('H', time());
+        $hour = intval($hour);
+        if($hour < 2){
+            header('Location: timeout');
+            exit();
+        }
+    }
+
+    function time_check_reverse(){
+        // Same idea, but this time for timeout.php, and redirect to main
+        date_default_timezone_set('Australia/Brisbane');
+        $hour = date('H', time());
+        $hour = intval($hour);
+        if($hour >= 2){
+            header('Location: main');
+            exit();
+        }
+    }
 ?>

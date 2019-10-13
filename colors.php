@@ -1,7 +1,7 @@
 <?php
     include 'functions.php';
     user_checks();
-    
+    time_check();
     include 'header.php'; 
     include 'menu.php';
     include 'clock.php';

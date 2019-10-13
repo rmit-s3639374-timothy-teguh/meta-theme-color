@@ -46,9 +46,85 @@
                     </span>'
                 );
                 break;
+            case 'E':
+                // Used for a special victory condition
+                echo('Everyone');
+                break;
             default:
                 echo('None');
         }
+    }
+
+    function determine_winner($b, $c, $g, $m, $r, $y){
+        // Function to determine the winner based on the values
+        $array = array($b, $c, $g, $m, $r, $y);
+        if(min($array) == max($array) && max($array) == 0){
+            return null;
+        }
+        if(min($array) == max($array) && max($array) != 0){
+            return 'E';
+        }
+        if(min(array_diff($array, array(0))) <= floor(max($array) / 2)){
+            if($b == 0){
+                $b = INF;
+            }
+            if($c == 0){
+                $c = INF;
+            }
+            if($g == 0){
+                $g = INF;
+            }
+            if($m == 0){
+                $m = INF;
+            }
+            if($r == 0){
+                $r = INF;
+            }
+            if($y == 0){
+                $y = INF;
+            }
+            if($b < $c && $b < $g && $b < $m && $b < $r && $b < $y){
+                return 'b';
+            }
+            if($c < $b && $c < $g && $c < $m && $c < $r && $c < $y){
+                return 'c';
+            }
+            if($g < $c && $g < $b && $g < $m && $g < $r && $g < $y){
+                return 'g';
+            }
+            if($m < $c && $m < $g && $m < $b && $m < $r && $m < $y){
+                return 'm';
+            }
+            if($r < $c && $r < $g && $r < $m && $r < $b && $r < $y){
+                return 'r';
+            }
+            if($y < $c && $y < $g && $y < $m && $y < $r && $y < $b){
+                return 'y';
+            }
+            return null;
+        }
+        else{
+            if($b > $c && $b > $g && $b > $m && $b > $r && $b > $y){
+                return 'b';
+            }
+            if($c > $b && $c > $g && $c > $m && $c > $r && $c > $y){
+                return 'c';
+            }
+            if($g > $c && $g > $b && $g > $m && $g > $r && $g > $y){
+                return 'g';
+            }
+            if($m > $c && $m > $g && $m > $b && $m > $r && $m > $y){
+                return 'm';
+            }
+            if($r > $c && $r > $g && $r > $m && $r > $b && $r > $y){
+                return 'r';
+            }
+            if($y > $c && $y > $g && $y > $m && $y > $r && $y > $b){
+                return 'y';
+            }
+            return null;
+        }
+
     }
 
     function user_init($email){
@@ -97,20 +173,20 @@
 
     // Run checks to redirect the user if certain conditions are not met
     function user_checks(){
-        $user = UserService::getCurrentUser();
-        if (isset($user)) {
-            user_init($user->getEmail());
-            if(has_chosen($user->getEmail()) == true){
-                header('Location: wait');
-                exit();
-            }
-            $logout_url = UserService::createLogoutUrl('/');
-            echo('<p><i>You are currently logged in as '.$user->getEmail().'</i></p>');
-            echo('<p><a href="'.$logout_url.'">Logout</a></p>');
-        } else {
-            header('Location: main');
-            exit();
-        }
+        // $user = UserService::getCurrentUser();
+        // if (isset($user)) {
+        //     user_init($user->getEmail());
+        //     if(has_chosen($user->getEmail()) == true){
+        //         header('Location: wait');
+        //         exit();
+        //     }
+        //     $logout_url = UserService::createLogoutUrl('/');
+        //     echo('<p><i>You are currently logged in as '.$user->getEmail().'</i></p>');
+        //     echo('<p><a href="'.$logout_url.'">Logout</a></p>');
+        // } else {
+        //     header('Location: main');
+        //     exit();
+        // }
     }
     function user_checks_basic(){
         // Variant, while ignoring whether or not the user has chosen a color

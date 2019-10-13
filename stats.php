@@ -47,17 +47,17 @@
         $yesterday_color = $result1[0][2];
         echo('<p>You Chose: <b>');
         colors($yesterday_color);
-        echo('</b></p>');
-        $winner = null;
-        echo('<p>Winner: <b>');
-        colors($winner);
-        echo('</b></p>');
         $b_num = $result2[0][1];
         $c_num = $result2[1][1];
         $g_num = $result2[2][1];
         $m_num = $result2[3][1];
         $r_num = $result2[4][1];
         $y_num = $result2[5][1];
+        echo('</b></p>');
+        $winner = determine_winner($b_num, $c_num, $g_num, $m_num, $r_num, $y_num);
+        echo('<p>Winner: <b>');
+        colors($winner);
+        echo('</b></p>');
         echo(
             '<div class="red">
                 <span class="text">

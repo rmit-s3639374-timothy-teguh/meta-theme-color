@@ -12,6 +12,9 @@
 <p>The rules are written in the main page. Read it carefully before choosing.</p>
 <p>You will get information on today's numbers upon choosing. Use that information wisely!</p>
 
+<!-- Notice how each color is an individual page. -->
+<!-- This is intentional because it allows people to "trick" other people into clicking the link by using URL shorteners, provided they saved their login information. -->
+
 <div class="red">
     <span class="text">
     <p><b><a href="red">Red</a></b></p>

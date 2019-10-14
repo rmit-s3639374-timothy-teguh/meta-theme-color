@@ -93,7 +93,7 @@
                 }
 
                 // Loser emails
-                $select = $db->prepare('SELECT email FROM mtc.users WHERE today_color != ?');
+                $select = $db->prepare('SELECT email FROM mtc.users WHERE today_color != ? AND today_color IS NOT NULL');
                 $select->execute(array($winner));
                 $result = $select->fetchAll();
                 $count = count($result);

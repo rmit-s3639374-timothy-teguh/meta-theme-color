@@ -173,20 +173,20 @@
 
     // Run checks to redirect the user if certain conditions are not met
     function user_checks(){
-        // $user = UserService::getCurrentUser();
-        // if (isset($user)) {
-        //     user_init($user->getEmail());
-        //     if(has_chosen($user->getEmail()) == true){
-        //         header('Location: wait');
-        //         exit();
-        //     }
-        //     $logout_url = UserService::createLogoutUrl('/');
-        //     echo('<p><i>You are currently logged in as '.$user->getEmail().'</i></p>');
-        //     echo('<p><a href="'.$logout_url.'">Logout</a></p>');
-        // } else {
-        //     header('Location: main');
-        //     exit();
-        // }
+        $user = UserService::getCurrentUser();
+        if (isset($user)) {
+            user_init($user->getEmail());
+            if(has_chosen($user->getEmail()) == true){
+                header('Location: wait');
+                exit();
+            }
+            $logout_url = UserService::createLogoutUrl('/');
+            echo('<p><i>You are currently logged in as '.$user->getEmail().'</i></p>');
+            echo('<p><a href="'.$logout_url.'">Logout</a></p>');
+        } else {
+            header('Location: main');
+            exit();
+        }
     }
     function user_checks_basic(){
         // Variant, while ignoring whether or not the user has chosen a color

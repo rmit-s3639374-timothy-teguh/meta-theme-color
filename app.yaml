@@ -10,22 +10,22 @@ handlers:
   static_dir: css
 
 - url: /
-  script: main.php
+  script: /pages/main.php
 
 - url: /main
-  script: main.php
+  script: /pages/main.php
 
 - url: /colors
-  script: colors.php
+  script: /pages/colors.php
 
 - url: /stats
-  script: stats.php
+  script: /pages/stats.php
 
 - url: /wait
-  script: wait.php
+  script: /pages/wait.php
 
 - url: /timeout
-  script: timeout.php
+  script: /pages/timeout.php
 
 - url: /red
   script: /colors/red.php

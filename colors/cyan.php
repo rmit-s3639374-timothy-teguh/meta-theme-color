@@ -12,13 +12,8 @@
         $db = null;
         $db = new pdo('mysql:unix_socket=/cloudsql/meta-theme-color:australia-southeast1:mtc-database;dbname=mtc', 'root', '');
 
-        $select = $db->prepare('SELECT today FROM mtc.entries WHERE color = "c"');
-        $select->execute();
-        $result = $select->fetchAll();
-        $today = $result[0][0];
-
-        $update = $db->prepare('UPDATE mtc.entries SET today = ? WHERE color = "c"');
-        $update->execute(array($today + 1));
+        $update = $db->prepare('UPDATE mtc.entries SET today = today + 1 WHERE color = "c"');
+        $update->execute();
 
         $update = $db->prepare('UPDATE mtc.users SET today_color = "c" WHERE email = ?');
         $update->execute(array($user->getEmail()));

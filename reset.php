@@ -1,4 +1,5 @@
 <?php
+    include 'functions.php';
     try{
         $db = null;
         $db = new pdo('mysql:unix_socket=/cloudsql/meta-theme-color:australia-southeast1:mtc-database;dbname=mtc', 'root', '');
@@ -20,6 +21,17 @@
         //     exit();
         // }
 
+        $winner = determine_winner($b, $c, $g, $m, $r, $y);
+        if(isset($winner)){
+            if($winner == "E"){
+                $update = $db->prepare('UPDATE mtc.users SET points = points + 1 WHERE today_color IS NOT NULL');
+                $update->execute();
+            }
+            else{
+                $update = $db->prepare('UPDATE mtc.users SET points = points + 1 WHERE today_color = ?');
+                $update->execute(array($winner));
+            }
+        }
         $update = $db->prepare('UPDATE mtc.entries SET yesterday = today WHERE 1=1');
         $update->execute();
 

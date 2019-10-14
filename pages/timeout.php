@@ -1,6 +1,7 @@
 <?php
     include 'functions.php'; 
     time_check_reverse();
+    user_checks_basic();
     include 'header.php';
     include 'menu.php';
     include 'clock.php';

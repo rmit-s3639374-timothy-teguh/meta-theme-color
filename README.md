@@ -5,4 +5,4 @@ A simple website made for entertainment and for people who do not have much time
 
 https://meta-theme-color.appspot.com/
 
-Edit: As of February 2020, billing has disabled for this application.
+Edit: As of February 2020, billing has been disabled for this application.
